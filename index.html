@@ -137,18 +137,19 @@ nav{
 .card-foot{
   display:flex;align-items:center;justify-content:space-between;
   border-top:1px solid var(--rule);padding-top:16px;margin-top:auto;
+  gap:12px;
 }
 .cta{
   font-size:12px;font-weight:400;letter-spacing:.04em;
   color:var(--gold);text-decoration:none;
   display:flex;align-items:center;gap:5px;
-  transition:gap .2s;
+  transition:gap .2s;white-space:nowrap;
 }
 .cta:hover{gap:9px}
 .cta-arrow{font-size:14px;line-height:1}
 .badge{
   font-size:10px;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--hint);font-weight:400;
+  color:var(--hint);font-weight:400;text-align:right;
 }
 .badge-live{color:#5A8A5A}
 .badge-beta{color:#7A7040}
@@ -203,15 +204,15 @@ footer{
     <p class="hero-sub">App desktop native, SaaS e strumenti open source per AI, produttività e Linux. Costruito da Daniele Spalletti.</p>
     <div class="hero-stats">
       <div>
-        <span class="stat-n">17</span>
+        <span class="stat-n">29</span>
         <span class="stat-l">Progetti</span>
       </div>
       <div>
-        <span class="stat-n">3</span>
+        <span class="stat-n">9</span>
         <span class="stat-l">Desktop</span>
       </div>
       <div>
-        <span class="stat-n">966</span>
+        <span class="stat-n">1.600+</span>
         <span class="stat-l">Articoli</span>
       </div>
     </div>
@@ -222,7 +223,7 @@ footer{
 <section class="sec">
   <div class="sec-bar">
     <span class="sec-name">Desktop</span>
-    <span class="sec-title">App native con Tauri 2.0 + Rust</span>
+    <span class="sec-title">App native per Windows, macOS e Android</span>
   </div>
   <div class="grid-3 grid-mb">
 
@@ -236,6 +237,19 @@ footer{
       <div class="card-foot">
         <a href="https://kashy-desktop.vercel.app" target="_blank" class="cta">Scopri <span class="cta-arrow">→</span></a>
         <span class="badge badge-live">Live · €19,99</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Scuole Musica · Desktop</p>
+      <h2 class="card-name">Solfège</h2>
+      <p class="card-desc">Gestionale completo per scuole di musica: allievi, insegnanti, corsi, calendario lezioni, sale, pagamenti e ricevute PDF. Dati locali, funziona offline. Demo web gratuita e prova di 15 giorni.</p>
+      <div class="card-stack">
+        <span class="pill">Tauri 2.0</span><span class="pill">Next.js</span><span class="pill">SQLite</span><span class="pill">shadcn/ui</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://solfege-five.vercel.app" target="_blank" class="cta">Scopri <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">Live · €249 una tantum</span>
       </div>
     </article>
 
@@ -265,13 +279,78 @@ footer{
       </div>
     </article>
 
+    <article class="card">
+      <p class="card-tag">PDF · Desktop &amp; Mobile</p>
+      <h2 class="card-name">CosmoNet Reader</h2>
+      <p class="card-desc">Lettore PDF per Android e Windows, 100% offline e senza pubblicità: segnalibri, ricerca nel testo, annotazioni, miniature e scorciatoie da tastiera.</p>
+      <div class="card-stack">
+        <span class="pill">Flutter</span><span class="pill">Dart</span><span class="pill">SQLite</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/cosmoreader" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">v2.0.2 · MIT</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Eventi · Desktop</p>
+      <h2 class="card-name">EasyEvent</h2>
+      <p class="card-desc">Preventivi, checklist di carico, schede di produzione e magazzino automatico per palchi modulari a noleggio. Database SQLite locale e geocoding offline dei comuni italiani.</p>
+      <div class="card-stack">
+        <span class="pill">Tauri 2.0</span><span class="pill">React 19</span><span class="pill">Rust</span><span class="pill">SQLite</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/Creatore-preventivi-palchi" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">Windows · macOS</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Musica · Desktop</p>
+      <h2 class="card-name">CosmoKaraoke</h2>
+      <p class="card-desc">Karaoke per Windows e Mac pensato per essere leggibile: caratteri per la dislessia, testo ingrandibile, alto contrasto. Supporta CD+G, video e MIDI, con prenotazioni da smartphone via QR code.</p>
+      <div class="card-stack">
+        <span class="pill">Tauri 2.0</span><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Rust</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/CosmoKaraoke" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">Uso personale</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">AI · Desktop</p>
+      <h2 class="card-name">AI Background Generator</h2>
+      <p class="card-desc">Generatore di sfondi AI gratuito per Windows 10/11. Gira in locale, senza account e senza filigrana.</p>
+      <div class="card-stack">
+        <span class="pill">Python</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/ai-background-generator-app" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">Free</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Appunti · Desktop &amp; Mobile</p>
+      <h2 class="card-name">CosmoNotes</h2>
+      <p class="card-desc">App di appunti per Windows e Android con editor a blocchi, blocco appunti per la clipboard, sync con Supabase e server MCP remoto per dare memoria all'AI.</p>
+      <div class="card-stack">
+        <span class="pill">Tauri 2.0</span><span class="pill">SQLite</span><span class="pill">Supabase</span><span class="pill">MCP</span>
+      </div>
+      <div class="card-foot">
+        <span class="cta">Prossimamente</span>
+        <span class="badge badge-beta">In sviluppo</span>
+      </div>
+    </article>
+
   </div>
 </section>
 
 <!-- SAAS -->
 <section class="sec">
   <div class="sec-bar">
-    <span class="sec-name">SaaS & Web App</span>
+    <span class="sec-name">SaaS &amp; Web App</span>
     <span class="sec-title">Next.js · Supabase · Firebase</span>
   </div>
   <div class="grid-3 grid-mb">
@@ -303,19 +382,6 @@ footer{
     </article>
 
     <article class="card">
-      <p class="card-tag">Scuole Musica · SaaS</p>
-      <h2 class="card-name">Solfège</h2>
-      <p class="card-desc">Gestionale completo per scuole di musica. Allievi, insegnanti, corsi, presenze, pagamenti e portale genitori. Piani da Free a White Label.</p>
-      <div class="card-stack">
-        <span class="pill">Next.js 16</span><span class="pill">Supabase</span><span class="pill">shadcn/ui</span>
-      </div>
-      <div class="card-foot">
-        <a href="https://solfege-five.vercel.app" target="_blank" class="cta">Scopri <span class="cta-arrow">→</span></a>
-        <span class="badge badge-live">Live · da €14/mo</span>
-      </div>
-    </article>
-
-    <article class="card">
       <p class="card-tag">Healthcare · PWA</p>
       <h2 class="card-name">CareLink</h2>
       <p class="card-desc">PWA sanitaria per RSA e ASL. Gestione pazienti, farmaci, parametri vitali e messaggistica real-time tra operatori sanitari. Multi-ruolo.</p>
@@ -325,6 +391,19 @@ footer{
       <div class="card-foot">
         <a href="https://care-link-landing-page.vercel.app" target="_blank" class="cta">Scopri <span class="cta-arrow">→</span></a>
         <span class="badge badge-beta">Beta</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Healthcare · PWA</p>
+      <h2 class="card-name">Anima</h2>
+      <p class="card-desc">Fusione di Memora e CareLink: PWA per la cura integrata di pazienti Alzheimer. Interfacce dedicate a paziente, caregiver, infermiere e medico, con parametri vitali, alert, SOS e messaggistica real-time.</p>
+      <div class="card-stack">
+        <span class="pill">Next.js 16</span><span class="pill">Supabase</span><span class="pill">Tailwind 4</span><span class="pill">PWA</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/Anima" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-beta">In sviluppo</span>
       </div>
     </article>
 
@@ -342,6 +421,19 @@ footer{
     </article>
 
     <article class="card">
+      <p class="card-tag">Produttività · PWA</p>
+      <h2 class="card-name">Orbita Agent</h2>
+      <p class="card-desc">Agenda mobile-first con viste Oggi, Settimana e Mese, dettatura vocale con IA e connettore MCP: Claude può aggiungere e gestire le attività al posto tuo.</p>
+      <div class="card-stack">
+        <span class="pill">Next.js 14</span><span class="pill">Supabase</span><span class="pill">Groq</span><span class="pill">MCP</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/CosmoAgenda" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">Uso personale</span>
+      </div>
+    </article>
+
+    <article class="card">
       <p class="card-tag">Social · Tool</p>
       <h2 class="card-name">ViralSync</h2>
       <p class="card-desc">Pianificazione e sincronizzazione contenuti per canali social con analisi delle tendenze e ottimizzazione dei tempi di pubblicazione.</p>
@@ -353,6 +445,43 @@ footer{
         <span class="badge badge-live">Live</span>
       </div>
     </article>
+
+    <article class="card">
+      <p class="card-tag">Ristorazione · Web App</p>
+      <h2 class="card-name">Ordina da Casa</h2>
+      <p class="card-desc">Piattaforma per ristoranti che vogliono ricevere ordini da casa, una specie di Glovo ma personale per ogni locale: si adatta a pizzerie e a ogni tipo di ristorazione, con menu, fasce di consegna e area admin personalizzabili.</p>
+      <div class="card-stack">
+        <span class="pill">TypeScript</span><span class="pill">Supabase</span><span class="pill">Stripe</span><span class="pill">Vercel</span>
+      </div>
+      <div class="card-foot">
+        <span class="cta">Prossimamente</span>
+        <span class="badge badge-beta">In sviluppo</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Open Source · Healthcare</p>
+      <h2 class="card-name">Memora</h2>
+      <p class="card-desc">App open source per il supporto a pazienti Alzheimer e familiari. Live feed, notifiche e accesso multi-ruolo per caregiver. Co-creata con Airalzh Onlus.</p>
+      <div class="card-stack">
+        <span class="pill">React</span><span class="pill">Vite</span><span class="pill">Supabase</span><span class="pill">Capacitor</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://memora-landing-bay.vercel.app" target="_blank" class="cta">Scopri <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">CC BY-NC 4.0</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- APP & GIOCHI -->
+<section class="sec">
+  <div class="sec-bar">
+    <span class="sec-name">App &amp; Giochi</span>
+    <span class="sec-title">Progetti leggeri, di vita quotidiana e di community</span>
+  </div>
+  <div class="grid-3 grid-mb">
 
     <article class="card">
       <p class="card-tag">Lifestyle · App</p>
@@ -381,15 +510,15 @@ footer{
     </article>
 
     <article class="card">
-      <p class="card-tag">Open Source · Healthcare</p>
-      <h2 class="card-name">Memora</h2>
-      <p class="card-desc">App open source per il supporto a pazienti Alzheimer e familiari. Live feed, notifiche e accesso multi-ruolo per caregiver. Co-creata con Airalzh Onlus.</p>
+      <p class="card-tag">Meme · Web</p>
+      <h2 class="card-name">Bardasci Meme</h2>
+      <p class="card-desc">Generatore di meme in salsa spoletina, per i fan de Li Bardasci.</p>
       <div class="card-stack">
-        <span class="pill">React</span><span class="pill">Vite</span><span class="pill">Supabase</span><span class="pill">Capacitor</span>
+        <span class="pill">TypeScript</span>
       </div>
       <div class="card-foot">
-        <a href="https://memora-landing-bay.vercel.app" target="_blank" class="cta">Scopri <span class="cta-arrow">→</span></a>
-        <span class="badge badge-live">CC BY-NC 4.0</span>
+        <a href="https://github.com/CosmoNetinfo/Bardasci-Meme" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">GitHub</span>
       </div>
     </article>
 
@@ -399,7 +528,7 @@ footer{
 <!-- TOOLS -->
 <section class="sec">
   <div class="sec-bar">
-    <span class="sec-name">Tools & Utility</span>
+    <span class="sec-name">Tools &amp; Utility</span>
     <span class="sec-title">Strumenti per sviluppatori e creator</span>
   </div>
   <div class="grid-4 grid-mb">
@@ -444,15 +573,67 @@ footer{
     </article>
 
     <article class="card">
-      <p class="card-tag">Creative · Web</p>
-      <h2 class="card-name">Cosmos</h2>
-      <p class="card-desc">Esperimento interattivo con visualizzazioni cosmiche procedurali costruito in Vite.</p>
+      <p class="card-tag">Social · AI</p>
+      <h2 class="card-name">Viral Decoder</h2>
+      <p class="card-desc">Analisi e replica di contenuti social virali con Gemini 2.0 Flash e ricerca web: trasforma un video di successo in un blueprint pronto per la produzione.</p>
       <div class="card-stack">
-        <span class="pill">Vite</span><span class="pill">JavaScript</span>
+        <span class="pill">JavaScript</span><span class="pill">Gemini</span>
       </div>
       <div class="card-foot">
-        <a href="https://cosmos-three-omega.vercel.app" target="_blank" class="cta">Apri <span class="cta-arrow">→</span></a>
-        <span class="badge badge-live">Live</span>
+        <a href="https://github.com/CosmoNetinfo/Viral-Decoder" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">GitHub</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">SEO · AI</p>
+      <h2 class="card-name">Articoli Perfetti</h2>
+      <p class="card-desc">Verifica SEO e GEO degli articoli tramite Gemini, usato nella pipeline editoriale di Cosmonet.info.</p>
+      <div class="card-stack">
+        <span class="pill">TypeScript</span><span class="pill">Gemini</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/CosmoNet_Articoli_Perfetti-" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">GitHub</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Media · AI</p>
+      <h2 class="card-name">Copertine Articoli</h2>
+      <p class="card-desc">Creatore AI di copertine per gli articoli di Cosmonet.info.</p>
+      <div class="card-stack">
+        <span class="pill">TypeScript</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/Copertine-Articoli-CosmoNet-" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">GitHub</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">Video · Utility</p>
+      <h2 class="card-name">Testo Remove</h2>
+      <p class="card-desc">Strumento per rimuovere il testo dai video.</p>
+      <div class="card-stack">
+        <span class="pill">TypeScript</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/Testo-Remuve" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">GitHub</span>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="card-tag">File · Desktop</p>
+      <h2 class="card-name">OmniConvert</h2>
+      <p class="card-desc">Convertitore desktop di file tra oltre 300 formati, con FFmpeg, Sharp e PDF-Lib.</p>
+      <div class="card-stack">
+        <span class="pill">Electron</span><span class="pill">Node.js</span><span class="pill">FFmpeg</span>
+      </div>
+      <div class="card-foot">
+        <a href="https://github.com/CosmoNetinfo/OmniConvert" target="_blank" class="cta">GitHub <span class="cta-arrow">→</span></a>
+        <span class="badge badge-live">GitHub</span>
       </div>
     </article>
 
