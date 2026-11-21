@@ -19,6 +19,7 @@ Portfolio dei miei progetti: app desktop native, SaaS e strumenti open source pe
 | CosmoNet Reader | Lettore PDF | Flutter · Dart | [GitHub](https://github.com/CosmoNetinfo/cosmoreader) |
 | EasyEvent | Preventivi palchi | Tauri 2.0 · React 19 · SQLite | [GitHub](https://github.com/CosmoNetinfo/Creatore-preventivi-palchi) |
 | CosmoKaraoke | Musica | Tauri 2.0 · React · Rust | [GitHub](https://github.com/CosmoNetinfo/CosmoKaraoke) |
+| CosmoDriver | Driver Windows | C# · .NET · WMI | [GitHub](https://github.com/CosmoNetinfo/CosmoDriver) |
 | AI Background Generator | AI | Python | [GitHub](https://github.com/CosmoNetinfo/ai-background-generator-app) |
 | CosmoNotes (in sviluppo) | Appunti | Tauri 2.0 · SQLite · Supabase · MCP | Prossimamente |
 
